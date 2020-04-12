@@ -1,0 +1,2 @@
+rootProject.name='Bookworming'
+include ':app'
