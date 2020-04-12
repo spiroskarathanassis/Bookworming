@@ -23,7 +23,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" tools:targetApi="lollipop" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
@@ -42,9 +42,9 @@
         android:id="@+id/manageLibraryButton"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginTop="143dp"
-        android:layout_x="50dp"
+        android:layout_x="50px"
         android:layout_y="36dp"
+        android:layout_marginTop="143dp"
         android:background="#FFFFFF"
         android:paddingLeft="5dp"
         android:paddingRight="5dp"
@@ -68,4 +68,58 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/manageLibraryButton" />
 
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity">
+<ImageView
+    android:id="@+id/imageView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="196dp"
+    android:contentDescription="@android:string/untitled"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:srcCompat="@drawable/logo" />
+<Button
+    android:id="@+id/button3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="380dp"
+    android:background="#1C1313"
+    android:text="@string/bteggrafi"
+    android:textColor="#FFFFFF"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+<Button
+    android:id="@+id/button2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#130D0D"
+    android:text="@string/btsynd"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toTopOf="@+id/button"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button3"
+    tools:text="Συνδεση" />
+<Button
+    android:id="@+id/button"
+    android:layout_width="203dp"
+    android:layout_height="58dp"
+    android:background="#0E0808"
+    android:text="@string/diaxeiristis"
+    android:textColor="#FFFFFF"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/button2"
+    tools:text="Σύνδεση ως διαχειριστής" />
 </androidx.constraintlayout.widget.ConstraintLayout>
