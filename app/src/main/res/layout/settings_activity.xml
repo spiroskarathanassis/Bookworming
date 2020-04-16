@@ -12,10 +12,10 @@
         android:baselineAligned="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/boxTittle"
-        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="@+id/boxTittle"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.274"
+        app:layout_constraintVertical_bias="0.179"
         tools:layout_conversion_absoluteHeight="603dp"
         tools:layout_conversion_absoluteWidth="411dp">
 
@@ -30,7 +30,6 @@
             android:textSize="18sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.546"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView4"
             app:layout_constraintTop_toTopOf="parent"
@@ -45,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
             android:fontFamily="sans-serif-medium"
-            android:text="@string/libraryManagemttitle"
+            android:text="@string/libraryManagementTitle"
             android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="@id/boxTittle"
@@ -61,10 +60,12 @@
             android:background="none"
             android:text="@string/alterButton"
             android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintBottom_toTopOf="@+id/deleteButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintHorizontal_bias="0.497"
             app:layout_constraintStart_toStartOf="parent"
-            tools:layout_editor_absoluteY="202dp" />
+            app:layout_constraintTop_toBottomOf="@+id/boxTittle"
+            app:layout_constraintVertical_bias="0.875" />
 
         <Button
             android:id="@+id/deleteButton"

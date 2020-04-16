@@ -19,8 +19,14 @@
     <string name="attachment_summary_on">Automatically download attachments for incoming emails
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
-    <string name="libraryManagemttitle">Διαχείρηση Βιβλιοθήκης</string>
+    <string name="libraryManagementTitle">Διαχείρηση Βιβλιοθήκης</string>
     <string name="alterButton">Αλλαγή</string>
     <string name="deleteButton">Διαγραφή</string>
     <string name="addButton">Προσθήκη</string>
+    <string name="changeScreen">Αλλαγή</string>
+    <string name="KindOfBook">Είδος Βιβλίου...</string>
+    <string name="titleOfBook">Τίτλος Βιβλίου...</string>
+    <string name="authorOfBook">Συγγραφέας...</string>
+    <string name="isbnOfBook">ISBN...</string>
+    <string name="searchButton">Αναζήτηση</string>
 </resources>
