@@ -29,4 +29,15 @@
     <string name="authorOfBook">Συγγραφέας...</string>
     <string name="isbnOfBook">ISBN...</string>
     <string name="searchButton">Αναζήτηση</string>
+    <string name="bookTittle">Τίτλος Βιβλίου</string>
+    <string name="bookAuthor">Συγγραφέας</string>
+    <string name="bookyearOfPublishing">Έτος Έκδοσης</string>
+    <string name="bookNumberOfPages">Αριθμός Σελίδων</string>
+    <string name="bookISBN">ISBN</string>
+    <string name="bookPublisher">Εκδότης</string>
+    <string name="bookCoverPage">Εξώφυλλο</string>
+    <string name="bookCategory">Είδος Βιβλίου</string>
+    <string name="adminAddPage">Προσθήκη</string>
+    <string name="uploadCoverPage">Upload</string>
+    <string name="bookSaveButton">Αποθήκευση</string>
 </resources>
