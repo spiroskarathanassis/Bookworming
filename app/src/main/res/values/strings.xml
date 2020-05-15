@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Bookworms</string>
+    <string name="mybutton">Button</string>
+    <string name="bteggrafi">Εγγραφή</string>
+    <string name="btsynd">Συνδεση</string>
+    <string name="diaxeiristis">Συνδεση ως διαχειριστης</string>
+</resources>
