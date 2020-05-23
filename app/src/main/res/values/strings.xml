@@ -1,7 +1,47 @@
 <resources>
-    <string name="app_name">Bookworms</string>
+    <string name="app_name">Bookworming</string>
     <string name="mybutton">Button</string>
     <string name="bteggrafi">Εγγραφή</string>
     <string name="btsynd">Συνδεση</string>
     <string name="diaxeiristis">Συνδεση ως διαχειριστης</string>
+    <string name="adminPage">Διαχειριστής</string>
+    <string name="libraryManagement">Διαχείριση Βιβλιοθήκης</string>
+    <string name="adminListEdit">ΕΠΕΞΕΡΓΑΣΙΑ ΛΙΣΤΑΣ</string>
+    <string name="title_activity_admin_library_management">libraryManagement</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="libraryManagementTitle">ΔΙΑΧΕΙΡΙΣΗ ΒΙΒΛΙΟΘΗΚΗΣ</string>
+    <string name="alterButton">Αλλαγή</string>
+    <string name="deleteButton">Διαγραφή</string>
+    <string name="addButton">Προσθήκη</string>
+    <string name="changeScreen">Αλλαγή</string>
+    <string name="KindOfBook">Είδος Βιβλίου...</string>
+    <string name="titleOfBook">Τίτλος Βιβλίου...</string>
+    <string name="authorOfBook">Συγγραφέας...</string>
+    <string name="isbnOfBook">ISBN...</string>
+    <string name="searchButton">Αναζήτηση</string>
+    <string name="bookTittle">Τίτλος Βιβλίου</string>
+    <string name="bookAuthor">Συγγραφέας</string>
+    <string name="bookYearOfPublishing">Έτος Έκδοσης</string>
+    <string name="bookNumberOfPages">Αριθμός Σελίδων</string>
+    <string name="bookISBN">ISBN</string>
+    <string name="bookPublisher">Εκδότης</string>
+    <string name="bookCoverPage">Εξώφυλλο</string>
+    <string name="bookCategory">Είδος Βιβλίου</string>
+    <string name="adminAddPage">Προσθήκη</string>
+    <string name="uploadCoverPage">Upload</string>
+    <string name="bookSaveButton">Αποθήκευση</string>
 </resources>

@@ -1,0 +1,78 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        android:id="@+id/settings"
+        android:layout_width="411dp"
+        android:layout_height="514dp"
+        android:baselineAligned="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.214"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179"
+        tools:layout_conversion_absoluteHeight="603dp"
+        tools:layout_conversion_absoluteWidth="411dp">
+
+        <TextView
+            android:id="@+id/boxTittle"
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="450sp"
+            android:background="@drawable/shadow"
+            android:elevation="4dp"
+            android:gravity="bottom|center_horizontal"
+            android:text="@string/libraryManagementTitle"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_conversion_absoluteHeight="40dp"
+            tools:layout_conversion_absoluteWidth="300dp"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/editButton"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:background="none"
+            android:text="@string/alterButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintBottom_toTopOf="@+id/deleteButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/boxTittle"
+            app:layout_constraintVertical_bias="0.875" />
+
+        <Button
+            android:id="@+id/deleteButton"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginLeft="104dp"
+            android:layout_marginTop="40dp"
+            android:background="none"
+            android:text="@string/deleteButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.479" />
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="200dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="20dp"
+            android:background="none"
+            android:text="@string/addButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

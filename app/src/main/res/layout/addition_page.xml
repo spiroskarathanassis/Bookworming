@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/add_yearOfPublishing"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/bookYearOfPublishing"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/add_numberOfPages"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:text="../@string/bookNumberOfPages"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/add_bookCategory"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="278dp"
+        android:layout_marginRight="24dp"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@android:string/bookCategory"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/add_ISBN"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="../@drawable/shadow"
+        android:gravity="center"
+        android:text="../@string/bookISBN"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/add_coverPage"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:background="../@drawable/shadow"
+        android:gravity="center"
+        android:text="../@string/bookCoverPage"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <TextView
+        android:id="@+id/boxTittle3"
+        android:layout_width="250dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="../@drawable/shadow"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body2"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/alertText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="../@string/adminAddPage"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body2" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_3"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_2"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_1"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_4"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_5"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_6"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_7"
+        android:layout_width="237dp"
+        android:layout_height="30dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="18dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputBook_8"
+        android:layout_width="187dp"
+        android:layout_height="54dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="74dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="134dp"
+        android:layout_marginBottom="507dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/add_uploadButton"
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="0dp"
+            android:paddingLeft="0dp"
+            android:paddingTop="0dp"
+            android:paddingRight="0dp"
+            android:paddingBottom="0dp"
+            android:text="@string/uploadCoverPage"
+            android:textSize="12sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/add_saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="249dp"
+        android:background="#FFFFFF"
+        android:text="@android:string/SaveButton"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/add_author"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_above="@+id/boxTittle3"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="-7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="226dp"
+        android:background="../@drawable/shadow"
+        android:gravity="center"
+        android:text="../@string/bookAuthor"
+        android:textAppearance="../@style/TextAppearance.AppCompat.Body1" />
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="172dp"
+        android:layout_marginRight="172dp"
+        android:layout_marginBottom="239dp"
+        android:text="Switch" />
+
+
+</RelativeLayout>
