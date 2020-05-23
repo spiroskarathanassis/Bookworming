@@ -1,10 +1,10 @@
-public class Question extends Quiz {
+public class Question /*extends Quiz */{
     private String description;
     private String type;
     private Integer score;
 
     public Question(String description, String type) {
-        this.super(theme);
+//        this.super(theme);
         this.description = description;
         this.type = type;
         this.setScore(type);
@@ -29,4 +29,5 @@ public class Question extends Quiz {
     public Integer getScore() {
         return this.score;
     }
+
 }

@@ -1,10 +1,11 @@
-public class Answer extends Quiz {
+
+public class Answer /* extends Quiz */{
 	private String description;
 	private Integer answerId;
 	private Boolean correctAnswer = false;
 
 	public Answer(String desc, Integer id, Boolean correct) {
-		super(theme);
+//		super(theme);
 		this.description = desc;
 		this.answerId = id;
 		this.setCorrectAnswer(correct);
@@ -19,12 +20,11 @@ public class Answer extends Quiz {
     }
 
     public void setCorrectAnswer(Boolean correct) {
-    	if (correct) {
-    		this.correctAnswer = true;
-    	}
+		this.correctAnswer = true;
     }
 
     public Boolean isCorrectAnswer() {
         return this.correctAnswer;
     }
+
 }

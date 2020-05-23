@@ -1,19 +1,19 @@
 public class SetQuiz {
 	Quiz quiz;
-	User user;
+//	User user;
 
-	public SetQuiz(User currentUser, String theme) {
-		this.user = currentUser;
+	public SetQuiz(/* User currentUser ,*/ String theme) {
+//		user = currentUser;
 		printPossibleThemes();
 	}
 
-	public void chooseTheme(User user, String theme) {
+	public void chooseTheme(/*User user,*/ String theme) {
 		String[] quizThemes = getQuizThemes();
 		String[] userThemes = getUserThemes(/* User user */);
 		Boolean isThemeCorrect = false;
 
-		if (userThemes.length != 0) {
-			for (String userEl : userThemes) {
+		if (userThemes.length != 0 || userThemes == null) {
+			for (String userEl: userThemes) {
 
 				// if user's theme match user's choice
 				if (theme == userEl) {
@@ -31,7 +31,7 @@ public class SetQuiz {
 		}
 
 		if (!isThemeCorrect) {
-			System.out.println("Μη Διαθέσιμο Quiz");
+			System.out.println(" Quiz");
 		}
 	} 
 
@@ -43,12 +43,12 @@ public class SetQuiz {
 	}
 
 	public String[] getUserThemes(/* User user */) {
-		// query = user.getAllBooks(categrgory); or query to database
+		// query = user.getAllBooks(category); or query to database
 		String[] query = {"Adventure"};
 		
 		if (query.length == 0) {
 			System.out.println("User has not bought yet Books");
-			return 0; 
+			return null; 
 		}
 
 		return query;
@@ -58,7 +58,8 @@ public class SetQuiz {
 		String[] quizThemes = getUserThemes();
 
 		for (String el: quizThemes) {
-			System.out.println(el)
+			System.out.println(el);
 		}
 	}
+
 } 

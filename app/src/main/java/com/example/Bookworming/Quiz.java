@@ -13,46 +13,64 @@ public class Quiz {
         return this.theme;
     }
 
-    public static void beginQuiz() {
+    public void beginQuiz() {
         String[][] quizQuestionData = getQuestions(this.theme); 
-
-        Boolean isAnswerCorrect;
+        
         String currentType;
         int score =0, maxScore =0;
+        Boolean isAnswerCorrect;
         int i=0;
         while (i < quizQuestionData.length) {
+            
             Question currentQuestion = new Question(
                 quizQuestionData[i][0], 
                 quizQuestionData[i][1]
             );    
 
             printNextQuestion(currentQuestion);
+            
+            /* print Answers */
+            currentType = currentQuestion.getType();
+            int answerLength = (currentType == "multipleChoice") ? 4 : 2;
+            Answer[] answerNames = new Answer[answerLength];
+     	   	String[][] currentAnswers = getAnswers();
 
-            type = currentQuestion.getType();
-            printAnswers(type, i, questionData[i][2]);
-
-            isAnswerCorrect = chooseAnswers();
+        	for (int j=0; j<answerLength; j++) {
+        		answerNames[j] = new Answer(
+        				currentAnswers[i][j], 
+        				j, 
+        				true
+        		);
+        		printAnswers(answerNames[j]);
+        	}
+            	
+            Integer[] answerPressed = chooseAnswers();
+            isAnswerCorrect = reviewAnswers(answerPressed, answerNames);
+            
             if (isAnswerCorrect) {
-                score += addToScore(currentQuestion);
+            	score += addToScore(currentQuestion);
             }
-
             maxScore = currentQuestion.getScore();
+            
+            i++;
+        }
+        
+        this.result = displayResults(score, maxScore);
+        if (result >= 70) {
+        	displayMessage("success");
+        	submitScore(result);
+        } else {
+        	displayMessage("fail");
+        	dismiss(result);
+        	displayMessage("dismiss");
         }
 
-        int result = displayResults(score, maxScore);
-        if (result >= 70) {
-            displayMessage("success");
-            submitScore(result);
-        } else {
-            displayMessage("fail");
-            dismiss(result);
-            displayMessage("dismiss");
-        }
     }
 
-    public String[][] getQuestions() {
+    public String[][] getQuestions(String theme) {
         // data is a query to database return an 2D array with question[Description][Type]
-        String[][] questionData = {
+    	
+    	String[][] questionData = {
             {"question 1","multipleChoice", "1"},
             {"question 2","multipleChoice", "4"},
             {"question 3","multipleChoice", "3"},
@@ -76,89 +94,81 @@ public class Quiz {
         return answersData; 
     }
 
-    public void printNextQuestion(Question q) {
-        // print Questions
+    public static void printNextQuestion(Question q) {
         String questionHeader = q.getDescription();
         System.out.println("Question: " + questionHeader);
     }
 
-    public void printAnswers(String type, int index, String correctAnswer) { 
-        String[][] currentAnswers = getAnswers();
-        int length;
-
-        (type == "multipleChoice") ? length = 4 : length = 2;
-        
-        for (int i=0; i<length; i++) {
-            Answer ("answer" + i+1) = new Answer(
-                currentAnswers[index][i],
-                i,
-                correctAnswer
-            );
-
-            String answerDescription = ("answer" +  i+1).getDescription();
-            System.out.println(answerDescription);
-        }
+    public void printAnswers(Answer answer) { 
+        String answerDescription = answer.getDescription();
+        System.out.println(answerDescription);
     }
 
-    public Boolean reviewAnswers(Integer[] userAnswerId) {
+    public Boolean reviewAnswers(Integer[] userAnswerId, Answer[] answerNames) {
         for (int elementId : userAnswerId) {
-            if ( ("answer" + elementId).isCorrectAnswer() ) {
+            if ( answerNames[elementId].isCorrectAnswer() ) {
                 return true;
             }
         }
-
+        
         return false;
     }
 
-    public Boolean chooseAnswers() {
-        Scanner input = new Scanner(System.in);
+    public Integer[] chooseAnswers() {
+//        Scanner input = new Scanner(System.in);
         System.out.println("Enter your answer (1-4)");
 
-        // int userAnswerId = parseInt(input.nextLine());
+//        userAnswerId = parseInt(input.nextLine());
         Integer[] userAnswerId = {1};
 
-        return reviewAnswers(userAnswerId);
+        return userAnswerId;
     }
-
-    public Integer addToScore(Question q) {
-        return q.getScore();
+    
+    public int addToScore(Question q) {
+    	return q.getScore();
     }
-
+    
     public Integer displayResults(int userScore, int maxScore) {
-        int result = (int) (userScore / maxScore) * 100;
-        System.out.println(" Your score is " + result + "%");
+    	int result = (int) (userScore / maxScore) * 100;
+    	System.out.println("Your score is " + result + "%");
 
-        return result;
+    	return result;
     }
     
     public void displayMessage(String message) {
-        switch (message) {
-            case "success":
-                System.out.println( "You did very well. Wou win a coupon code for a free book of your choice");
-                break;
-            case "fail":
-                System.out.println("Your score is failed. But it was a nice try");
-                break;
-            case "dismiss":
-                setTimeout( () --> 
-                    System.out.println("You can retry after 3 months again. Until then read more"),
-                    3000
-                );
-                break;
-        }
+    	switch (message) {
+    		case "sucess":
+    			System.out.println("You did very well. You win a coupon code to "
+    							+ "use it for tour next order of book of your choice");
+    			break;
+    		case "fail":
+    			System.out.println("Your score is failed. But it was a nice try");
+    			break;
+    		case "dismiss":
+    			/* setTimeout(() -> 		// lambda expression
+    				System.out.println("You can retry after 3 months again. Until then read more..."),
+    				3000
+    			); */
+    			break;
+    	}
     }
-
-    public void submitScore(int sum) {
-        // insert into user database the result of quiz
-        System.out.println("Your result submitted successfully");
+    
+    public static void submitScore(int sum) {
+    	// insert into user database the result od quiz
+    	System.out.println("Your result submitted successfully");
     }
-
+    
     public void dismiss(int userResult) {
-        Scanner dismissChoice = new Scanner(System.in);
-        System.out.println("Do you want to dismiss result? Enter Y/N");
-
-        if (toUpperCase( dismissChoice.nextLine() ) == "N") {
-            submitScore(userResult);
-        }
+    	Scanner dismissScanner = new Scanner(System.in);
+    	System.out.println("Do you want to dismiss result? Enter Y/N");
+    	
+    	if (dismissScanner.hasNext("N")) {
+    		submitScore(userResult);
+    	}
+    	
+    	dismissScanner.close();
     }
+    
+    
+
 }
