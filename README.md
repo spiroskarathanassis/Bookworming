@@ -8,7 +8,7 @@ This is a **Library Mobile System** that User can
   - take knowledge quiz about differents categories of books
   - choose to suggest him/her the best book by top rated reviews in this category.
   
-> Also we have also implemented an Interface for Admin where can
+Also we have also implemented an Interface for Admin where can
  - manage books (add/ edit/ delete)
  - manage Book Lists (=same category books)
  
