@@ -8,7 +8,7 @@ User branch -> Οθόνες από UI του thiχρήστη
 Admin branch -> Οθόνες από UI του Διαχειριστή
 
 ## UI
-![Image of Login Page] (/MockUps/login_page.PNG)
+![Image of Login Page] (https://github.com/spiroskarathanassis/Bookworming/blob/master/MockUps/login_page.PNG)
 
 
 
