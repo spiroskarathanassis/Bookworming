@@ -7,6 +7,8 @@ User branch -> Οθόνες από UI του thiχρήστη
 
 Admin branch -> Οθόνες από UI του Διαχειριστή
 
+# -------------------------------- #
+
 ### UI
 ![Image of Login_Page](./MockUps/login_page.PNG)
 ![Image of Login_Page](./MockUps/user_main_page.PNG)
@@ -16,7 +18,7 @@ Admin branch -> Οθόνες από UI του Διαχειριστή
 ![Image of Login_Page](./MockUps/admin_addBook_page.PNG)
 ![Image of Login_Page](./MockUps/admin_editBook_Page.PNG)
 
-
+# -------------------------------- #
 
 #### Team
 Names                 | Email
