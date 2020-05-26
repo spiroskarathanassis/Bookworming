@@ -1,4 +1,4 @@
-# Bookworming
+## Bookworming
 
 This is a Library Mobile System 
 
@@ -7,12 +7,12 @@ User branch -> Οθόνες από UI του thiχρήστη
 
 Admin branch -> Οθόνες από UI του Διαχειριστή
 
-## UI
-![Image of Login_Page] (https://github.com/spiroskarathanassis/Bookworming/blob/master/MockUps/login_page.PNG)
+### UI
+![Image of Login_Page](https://github.com/spiroskarathanassis/Bookworming/blob/master/MockUps/login_page.PNG)
 
 
 
-### Team
+#### Team
 Names                 | Email
 --------------------- | ---------------------
 Spiros Karathanassis  | karathanassis13@gmail.com
