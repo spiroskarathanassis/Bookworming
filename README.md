@@ -7,7 +7,12 @@ User branch -> Οθόνες από UI του thiχρήστη
 
 Admin branch -> Οθόνες από UI του Διαχειριστή
 
-Team
+## UI
+![Image of Login Page] (/MockUps/login_page.PNG)
+
+
+
+### Team
 Names                 | Email
 --------------------- | ---------------------
 Spiros Karathanassis  | karathanassis13@gmail.com
