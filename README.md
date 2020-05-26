@@ -10,6 +10,7 @@ Admin branch -> Οθόνες από UI του Διαχειριστή
 # -------------------------------- #
 
 ### UI
+`Some of UIs that implemented on Android Studio is here:`
 ![Image of Login_Page](./MockUps/login_page.PNG)
 ![Image of Login_Page](./MockUps/user_main_page.PNG)
 ![Image of Login_Page](./MockUps/user_bookwormingAnaz_page.PNG)
