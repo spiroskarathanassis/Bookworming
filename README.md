@@ -8,6 +8,7 @@ User branch -> Οθόνες από UI του thiχρήστη
 Admin branch -> Οθόνες από UI του Διαχειριστή
 
 Team
+Names                 | Email
 --------------------- | ---------------------
 Spiros Karathanassis  | karathanassis13@gmail.com
 --------------------- | ---------------------
