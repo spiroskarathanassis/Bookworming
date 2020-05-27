@@ -36,21 +36,21 @@ Class Name | Description
 ---------- | ----------
 Admin | Entity that manage books, set quiz & create book lists
 User | Entity that uses the app
-Library | Entity that require books
-Book | Object that require details of Book (id, name, author, publisher etc)
-MyBooks | Entity that require user's borrowed/purchased  books
-BorrowedBooks | Entity that require user's borrowed books
+Library | Entity that requires books
+Book | Object that requires details of Book (id, name, author, publisher etc)
+MyBooks | Entity that requires user's borrowed/purchased  books
+BorrowedBooks | Entity that requires user's borrowed books
 CompareBook | 
-BookList | Entity that require available book lists for BookWorming
-AvailabilityList | 
-Reviews | 
-Author | 
-Publisher | 
-ShoppingBasket | 
+BookList | Entity that requires available book lists for BookWorming
+AvailabilityList | Entity that requires books where user looks for availability 
+Reviews | Entity that requires reactions of "stars" (score of book)
+Author | Entity that required on Book's characteristics
+Publisher | Entity that required on Book's characteristics
+ShoppingBasket | Entity that includes books before been purchasing by User
 SetQuiz | Entity that set quiz game
 Quiz | Entity that user reacts with
-Question | Entity that require quiz questions
-Answer | Enitty that require quiz answers
+Question | Entity that requires quiz questions
+Answer | Enitty that requires quiz answers
 
 
 Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
