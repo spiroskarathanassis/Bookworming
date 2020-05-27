@@ -1,9 +1,7 @@
 package com.example.Bookworming;
 
 import android.os.Build;
-
 import androidx.annotation.RequiresApi;
-
 import com.opencsv.CSVReader;
 
 import java.io.FileReader;
@@ -14,7 +12,7 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Book{
+public class Book {
 
     int id;
     String title;
@@ -31,17 +29,14 @@ public class Book{
 
     //List<AvailabilityList> availabilitylist = new ArrayList<AvailabilityList>();
 
+    public Book() {}
 
-    Book(){
-
-    }
     public Book(String ttl, String aut, int is, List <String> ty, int ye){
-
-        title = ttl;
-        author = aut;
-        isbn = is;
-        type = ty;
-        year = ye;
+        this.title = ttl;
+        this.author = aut;
+        this.isbn = is;
+        this.type = ty;
+        this.year = ye;
     }
 
     public boolean checkBookData(){
@@ -57,22 +52,18 @@ public class Book{
         if(String.valueOf(isbn).length() < 8  )
             throw new IllegalArgumentException("Error...");
 
-
         return true;
     }
 
     public int getId(){
-
         return  id;
     }
 
     public List<String> getTypes(){
-
         return type;
     }
 
     public double getprice(){
-
         return price;
     }
 
@@ -83,36 +74,30 @@ public class Book{
         List<BookList> returnList = new ArrayList<BookList>();
 
         for(int i=0; i<book_list.size(); i++){
-
-            if(book_list.get(i).type == type) returnList.add(book_list.get(i));//book_list.get(i).type == type
+            if(book_list.get(i).type == type) return List.add(book_list.get(i));//book_list.get(i).type == type
         }
 
         return returnList;
     }
 
-    public boolean checkAvailability(){
-
+    public boolean checkAvailability() {
         boolean availability_status = false;//book_not_available()
 
         //for (int i=0; i<books.size(); i++) {
         // Book randbook = (Book) books.get(i);
 
         if (num_of_copies_for_lending > 0) { //randbook.availability == 1
-
             availability_status = true;//book_available()
-
         }
         //}
         return availability_status;
     }
 
-    public int stock(){
-
+    public int stock() {
         return num_of_copies_for_buy;
     }
 
-    public String checkbookstatus(){
-
+    public String checkbookstatus() {
         int status = 0;
         String message;
 
@@ -124,7 +109,6 @@ public class Book{
             message="daneismos kai agora";
         else
             message="oxi diathesimo";
-
 
         return message;
     }
