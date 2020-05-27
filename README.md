@@ -14,7 +14,7 @@ Also we have also implemented an Interface for Admin where can
  
  
 
-### UI
+ ### --> UI
 
 * Some of UIs that implemented on Android Studio is here:
 
@@ -28,29 +28,29 @@ Also we have also implemented an Interface for Admin where can
 
 * You can check our prototype virtual application [here](https://www.figma.com/proto/BLNJzArXshZJ9vYTSCEAxp/BookWorms?node-id=192%3A2&scaling=scale-down)
 
-### UX
+### --> UX
 
 Class Diagram:
 
 Class Name | Description
 ---------- | ----------
-Admin | 
-User |
-Library |
-Book |
-MyBooks |
-BorrowedBooks |
-CompareBook |
-BookList |
-AvailabilityList |
-Reviews |
-Author |
-Publisher |
-ShoppingBasket |
-SetQuiz |
-Quiz |
-Question |
-Answer |
+Admin | Entity that manage books, set quiz & create book lists
+User | Entity that uses the app
+Library | Entity that require books
+Book | Object that require details of Book (id, name, author, publisher etc)
+MyBooks | Entity that require user's borrowed/purchased  books
+BorrowedBooks | Entity that require user's borrowed books
+CompareBook | 
+BookList | Entity that require available book lists for BookWorming
+AvailabilityList | 
+Reviews | 
+Author | 
+Publisher | 
+ShoppingBasket | 
+SetQuiz | Entity that set quiz game
+Quiz | Entity that user reacts with
+Question | Entity that require quiz questions
+Answer | Enitty that require quiz answers
 
 
 Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
