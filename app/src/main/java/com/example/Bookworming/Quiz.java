@@ -1,3 +1,5 @@
+package com.example.Bookworming;
+
 import java.util.Scanner;
 
 public class Quiz {

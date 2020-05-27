@@ -1,3 +1,5 @@
+package com.example.Bookworming;
+
 public class Question /*extends Quiz */{
     private String description;
     private String type;
