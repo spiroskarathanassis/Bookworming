@@ -1,6 +1,6 @@
 ## Bookworming
 
-This is a **Library Mobile System** that 
+This is a `Library Mobile System` that 
 **User** can
   - search books
   - be informed about the availability of books around his/her city's Libraries
@@ -31,7 +31,7 @@ Also we have also implemented an Interface for **Admin** where can
 
 ### --> UX
 
-Class Diagram:
+Class implementation:
 
 Class Name | Description
 ---------- | ----------
