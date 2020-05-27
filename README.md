@@ -12,9 +12,7 @@ Also we have also implemented an Interface for Admin where can
  - manage books (add/ edit/ delete)
  - manage Book Lists (=same category books)
  
-
-# -------------------------------- #
-
+ 
 
 ### UI
 
@@ -30,8 +28,33 @@ Also we have also implemented an Interface for Admin where can
 
 * You can check our prototype virtual application [here](https://www.figma.com/proto/BLNJzArXshZJ9vYTSCEAxp/BookWorms?node-id=192%3A2&scaling=scale-down)
 
+### UX
 
-# -------------------------------- #
+Class Diagram:
+
+Class Name | Description
+---------- | ----------
+Admin | 
+User |
+Library |
+Book |
+MyBooks |
+BorrowedBooks |
+CompareBook |
+BookList |
+AvailabilityList |
+Reviews |
+Author |
+Publisher |
+ShoppingBasket |
+SetQuiz |
+Quiz |
+Question |
+Answer |
+
+
+Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
+
 
 
 #### Team
