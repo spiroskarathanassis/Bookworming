@@ -31,7 +31,7 @@ Also we have also implemented an Interface for **Admin** where can
 
 ### --> UX
 
-Class implementation:
+* Class implementation:
 
 Class Name | Description
 ---------- | ----------
@@ -53,8 +53,9 @@ Quiz | Entity that user reacts with
 Question | Entity that requires quiz questions
 Answer | Enitty that requires quiz answers
 
+* Domain Model: ![Image of Domain_Model](./UML%20Diagrams/Domain%20Model/Domain-model.jpg)
 
-Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
+* Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
 
 
 
