@@ -68,29 +68,42 @@ public class User{
 
     //CompareBook list
     List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
-    int[] compare = new int[2];
+    public void clickOnCompareButton(int compId) {
+        compBook1 = new CompareBook(this.id, compId);
 
-    int k = 0;
-    public void chooseBookToCompare(int cid){
-
-        if(k<1) {
-            compare[k] = cid;
-            k++;
+        if (compare_books.size() == 0) {
+            compBook2 = continueWithAnotherChoice();
+        } else {
+            compBook2 = chooseBookToCompareWith();
         }
-        else getAnotherBookToCompare(cid);
 
-        //new CompareBook(id, bid);
+        compareBooks(compBook1, compBook2);
     }
 
-    public void getAnotherBookToCompare(int c2id){
+    public CompareBook continueWithAnotherChoice() {
+        int compId2 = 100;      // random
 
-        if(k<2){
-            compare[k] = c2id;
-            CompareBook bcompare = new CompareBook(id, compare[0], compare[1]);
-            //compare_books.add(rndbook);//todo
-            bcompare.saveOnDatabase();
+        return new CompareBook(this.id, compId2);
+    }
+
+    public CompareBook chooseBookToCompareWith(int compId) {
+        List<CompareBook> compBooks = getCompareBooks();
+
+        for (CompareBook cb : compBooks) {
+            if (cb.checkUnavailability() && (cb.book_id == compId)) {
+                compBooks.remove(cb);
+                cb.displayUnavailability();
+            }
         }
 
+        return compBooks.get(1);
+    }
+
+    public void compareBooks(CompareBook compB1, CompareBook compB2) {}
+
+
+    public List<CompareBook> getCompareBooks() {
+        return compare_books;
     }
 
     public void setName(String new_name){
