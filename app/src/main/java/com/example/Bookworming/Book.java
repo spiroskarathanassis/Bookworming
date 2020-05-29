@@ -63,7 +63,7 @@ public class Book {
         return type;
     }
 
-    public double getprice(){
+    public double getPrice(){
         return price;
     }
 
