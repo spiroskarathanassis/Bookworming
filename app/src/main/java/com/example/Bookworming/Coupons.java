@@ -14,9 +14,9 @@ public class Coupons{
         name = na;
     }
 
-    public boolean checkpoints(int user_points){
+    public boolean checkpoints(User user){
 
-        if(user_points >= points) return true;
+        if(user.getPoints() >= points) return true;
         else return false;
     }
 

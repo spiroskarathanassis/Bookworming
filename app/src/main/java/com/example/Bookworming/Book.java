@@ -13,12 +13,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Book {
-
+    int bookid =0;
     int id;
     String title;
     double price;
     String description;
-    String author;
+    Author author;
+    Publisher publisher;
     int isbn;
     List <String> type = new ArrayList<String>();
     int year;
@@ -31,9 +32,11 @@ public class Book {
 
     public Book() {}
 
-    public Book(String ttl, String aut, int is, List <String> ty, int ye){
+    public Book(String ttl, String aut, String pname, int is, List <String> ty, int ye){
+        this.id = bookid++;
         this.title = ttl;
-        this.author = aut;
+        this.author = new Author(aut, 'm');
+        this.publisher = new Publisher(pname, pname + "@gmail.com");
         this.isbn = is;
         this.type = ty;
         this.year = ye;

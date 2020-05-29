@@ -50,7 +50,7 @@ public class User{
         Log.d("myTag", "User created");
     }
 
-<<<<<<< HEAD
+
     public List<BookList> getUserBookList() {
         return userBookList;
     }
@@ -58,8 +58,7 @@ public class User{
     public void setUserBookList(List<BookList> userBookList) {
         this.userBookList = userBookList;
     }
-=======
->>>>>>> 8f42bf76697dd73dc3198705e02ee20c708619bf
+
 
     public void clickOnCompareBook(){//todo -> or clickOnCompareButton
 
@@ -71,9 +70,8 @@ public class User{
     }
 
 
-    public void setScoreOfBook(Book b){
-        // input score = 2 stars
-        int score = 2;
+    public void setScoreOfBook(Book b, int score){
+
         Reviews review = new Reviews(Math.random() * 1000);
 
         review.addReview(score);
@@ -177,7 +175,6 @@ public class User{
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean bookCheck(int id) throws IOException {
 
-        Log.d("booker2", "bookCheck message");
 
         //CSVReader reader = new CSVReader(new FileReader("raw/book.csv"));
         //List books = reader.readAll();

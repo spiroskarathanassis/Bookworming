@@ -6,18 +6,16 @@ import java.util.List;
 
 public class Library{
 
-    int id;
-    String name;
+    private int id;
+    private String name;
 
+    private  List<Book> books;
 
-    List<Book> books = new ArrayList<Book>();
-    Book book4 = new Book("book4", "author4", 2125, "sometype4", 2009);
-
-    public Library(int i_d, String na){
+    public Library(int i_d, String na, List<Book> books){
         id = i_d;
         name = na;
+        this.books = books;
 
-        books.add(book4);
     }
 
     public boolean checkavailability(int book_id){

@@ -14,11 +14,11 @@ public class BorrowedBooks {
     int book_id;
     LocalDate date;
 
-    //public BorrowedBooks(int uid, int bid){
+    public BorrowedBooks(int uid, int bid){
 
-        //user_id = uid;
-        //book_id = bid;
-    //}
+        user_id = uid;
+        book_id = bid;
+    }
 
     public long dayscalculation(){
 
