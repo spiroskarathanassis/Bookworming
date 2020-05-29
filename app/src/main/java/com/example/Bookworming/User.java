@@ -50,7 +50,6 @@ public class User{
         Log.d("myTag", "User created");
     }
 
-<<<<<<< HEAD
     public List<BookList> getUserBookList() {
         return userBookList;
     }
@@ -58,8 +57,6 @@ public class User{
     public void setUserBookList(List<BookList> userBookList) {
         this.userBookList = userBookList;
     }
-=======
->>>>>>> 8f42bf76697dd73dc3198705e02ee20c708619bf
 
     public void clickOnCompareBook(){//todo -> or clickOnCompareButton
 
