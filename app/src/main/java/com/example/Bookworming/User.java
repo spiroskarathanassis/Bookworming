@@ -49,9 +49,6 @@ public class User{
         Log.d("myTag", "User created");
     }
 
-<<<<<<< HEAD
-
-=======
     public void clickOnCompareBook(){//todo -> or clickOnCompareButton
 
     }
@@ -61,22 +58,13 @@ public class User{
         return points;
     }
 
-    /*public void setScoreOfBook(Book b){
+    public void setScoreOfBook(Book b){
+        // input score = 2 stars
+        int score = 2;
+        Reviews review = new Reviews(Math.random() * 1000);
 
-        Reviews review = new Reviews();
-        addReview(stars);
+        review.addReview(score);
     }
-
-    public void addReview(){
-
-
-    }
-
-    public void reviewBook(Book b){
-
-        Reviews review = new Reviews();
-
-    }*/
 
     //CompareBook list
     List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
@@ -117,7 +105,6 @@ public class User{
     public List<CompareBook> getCompareBooks() {
         return compare_books;
     }
->>>>>>> 3477594611f39a12fd1514685420739700a646c0
 
     public void setName(String new_name){
 
