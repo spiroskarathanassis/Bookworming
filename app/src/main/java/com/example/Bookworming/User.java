@@ -49,34 +49,12 @@ public class User{
         Log.d("myTag", "User created");
     }
 
-<<<<<<< HEAD
-
-=======
-    public void clickOnCompareBook(){//todo -> or clickOnCompareButton
-
-    }
 
     public int getPoints(){
 
         return points;
     }
 
-    /*public void setScoreOfBook(Book b){
-
-        Reviews review = new Reviews();
-        addReview(stars);
-    }
-
-    public void addReview(){
-
-
-    }
-
-    public void reviewBook(Book b){
-
-        Reviews review = new Reviews();
-
-    }*/
 
     //CompareBook list
     List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
@@ -113,11 +91,14 @@ public class User{
 
     public void compareBooks(CompareBook compB1, CompareBook compB2) {}
 
-
     public List<CompareBook> getCompareBooks() {
         return compare_books;
     }
->>>>>>> 3477594611f39a12fd1514685420739700a646c0
+
+    public void setCompareBookList(){};
+
+    public List<CompareBook> getCompareBookList(){}
+
 
     public void setName(String new_name){
 

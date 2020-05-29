@@ -11,6 +11,7 @@ public class MyBooks {
     int book_id;
     int list_id;
     int score;
+    String review;
     //List<Book> my_books = new ArrayList<Book>();
 
     public MyBooks(int uid, int bid, int lid, int score){
@@ -23,7 +24,7 @@ public class MyBooks {
 
 
 
-    public  void reviewBook(String review){
+    public void reviewBook(String review){
 
         this.review = review;
     }
