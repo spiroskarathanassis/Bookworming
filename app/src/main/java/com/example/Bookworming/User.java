@@ -50,11 +50,23 @@ public class User{
     }
 
 
+    public void clickOnCompareBook(){//todo -> or clickOnCompareButton
+
+    }
+
     public int getPoints(){
 
         return points;
     }
 
+
+    public void setScoreOfBook(Book b){
+        // input score = 2 stars
+        int score = 2;
+        Reviews review = new Reviews(Math.random() * 1000);
+
+        review.addReview(score);
+    }
 
     //CompareBook list
     List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
@@ -98,6 +110,7 @@ public class User{
     public void setCompareBookList(){};
 
     public List<CompareBook> getCompareBookList(){}
+
 
 
     public void setName(String new_name){

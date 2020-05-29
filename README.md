@@ -53,7 +53,7 @@ Quiz | Entity that user reacts with
 Question | Entity that requires quiz questions
 Answer | Enitty that requires quiz answers
 
-* Domain Model: ![Image of Domain_Model](./UML%20Diagrams/Domain%20Model/Domain-model.jpg)
+* Domain Model: ![Image of Domain_Model](https://github.com/spiroskarathanassis/Bookworming/blob/master/UML%20Diagrams/Domain%20Model/Domain-Model.png)
 
 * Class path: [src/main/Bookworming](https://github.com/spiroskarathanassis/Bookworming/tree/master/app/src/main/java/com/example/Bookworming)
 
