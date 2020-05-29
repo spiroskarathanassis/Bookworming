@@ -25,7 +25,7 @@ public class Reviews /* extends Book*/{
 		this.stars += stars;
 	}
 
-	public int getReviewrs() {
+	public int getReviewers() {
 		return reviewers;
 	}
 

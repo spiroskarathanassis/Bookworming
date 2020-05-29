@@ -21,9 +21,26 @@ public class MyBooks {
         score = 0;
     }
 
-    public void setScoreOfBook(int sc){
 
-        score = sc;
+
+    public  void reviewBook(String review){
+
+        this.review = review;
+    }
+
+    public void setScoreOfBook(int score){
+
+        this.score = score;
+    }
+
+    public void saveReview(){
+
+        // insert into database
+        System.out.println("Successful saved");
+    }
+
+    public void displayFailReviewMessage(){
+        System.out.println("Fail review message.");
     }
 
 }//end of class

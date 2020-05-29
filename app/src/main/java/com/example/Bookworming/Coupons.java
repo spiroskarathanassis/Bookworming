@@ -8,14 +8,16 @@ public class Coupons{
     int points;
 
     public Coupons(int i_d, float disc, String na){
+
         id = i_d;
         discount = disc;
         name = na;
     }
 
-    public boolean checkpoints(){//todo μεταφορα σε User
+    public boolean checkpoints(int user_points){
 
-        return false;
+        if(user_points >= points) return true;
+        else return false;
     }
 
     public int applydiscount(int price, int discount){

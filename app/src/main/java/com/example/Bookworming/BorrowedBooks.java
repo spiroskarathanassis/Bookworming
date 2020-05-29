@@ -14,7 +14,7 @@ public class BorrowedBooks {
     int book_id;
     LocalDate date;
 
-    //public  BorrowedBooks(int uid, int bid){
+    //public BorrowedBooks(int uid, int bid){
 
         //user_id = uid;
         //book_id = bid;
@@ -22,9 +22,8 @@ public class BorrowedBooks {
 
     public long dayscalculation(){
 
-        long randdate = ChronoUnit.DAYS.between(date, LocalDate.now());
-
-        return randdate;
+        long days = ChronoUnit.DAYS.between(date, LocalDate.now());
+        return days;
     }
 
 }

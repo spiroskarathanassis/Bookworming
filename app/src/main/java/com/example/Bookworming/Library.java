@@ -20,23 +20,32 @@ public class Library{
         books.add(book4);
     }
 
-
+    public boolean checkavailability(int book_id){
+        boolean availability = false;
+        for (int i=0; i<books.size(); i++) {
+            if ((books.get(i)).id == book_id) {
+                availability = books.get(i).checkAvailability();
+            }
+        }
+        return availability;
+    }
 
     public void addBook(Book book_to_add){
 
         books.add(book_to_add);
     }
 
-    public void changeBook(String ttl, String aut, int is, List <String> ty, int ye){
+    public void changeBook(int id, Book book){
 
         for (int i=0; i<books.size(); i++) {
             if ((books.get(i)).id == id) {
 
-                (books.get(i)).title = ttl;
+                books.set(i, book);
+                /*(books.get(i)).title = ttl;
                 (books.get(i)).author = aut;
                 (books.get(i)).isbn = is;
                 (books.get(i)).type =  ty;
-                (books.get(i)).year = ye;
+                (books.get(i)).year = ye;*/
             }
         }
     }

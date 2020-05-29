@@ -23,6 +23,15 @@ public class User{
     //MyBooks list
     List<MyBooks> my_books = new ArrayList<MyBooks>();//todo read from file
 
+    //CompareBook list
+    List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from
+
+    //BorrowedBooks list
+    List<BorrowedBooks> b_books = new ArrayList<BorrowedBooks>();//todo read from file
+    //create
+    BorrowedBooks book2 = new BorrowedBooks();
+    BorrowedBooks book3 = new BorrowedBooks();
+
     @RequiresApi(api = Build.VERSION_CODES.O)
     public User(String na, String em, String pass) throws IOException {
 
@@ -49,27 +58,8 @@ public class User{
         return points;
     }
 
-    /*public void setScoreOfBook(Book b){
 
-        Reviews review = new Reviews();
-        addReview(stars);
-    }
-
-    public void addReview(){
-
-
-    }
-
-    public void reviewBook(Book b){
-
-        Reviews review = new Reviews();
-
-    }*/
-
-    //CompareBook list
-    List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
     int[] compare = new int[2];
-
     int k = 0;
     public void chooseBookToCompare(int cid){
 
@@ -135,12 +125,6 @@ public class User{
         System.out.println("Error");
     }
 
-
-    //BorrowedBooks list
-    List<BorrowedBooks> b_books = new ArrayList<BorrowedBooks>();//todo read from file
-    //create
-    BorrowedBooks book2 = new BorrowedBooks();
-    BorrowedBooks book3 = new BorrowedBooks();
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public boolean bookCheck(int id) throws IOException {
