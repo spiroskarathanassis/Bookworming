@@ -13,12 +13,12 @@ import java.util.List;
 @RequiresApi(api = Build.VERSION_CODES.O)
 public class User{
 
-    String name;
-    String email;
-    String password;
-    int points;
+    private String name;
+    private String email;
+    private String password;
+    private int points;
     private int id;
-
+    private List<BookList> userBookList;
 
     //MyBooks list
     List<MyBooks> my_books = new ArrayList<MyBooks>();//todo read from file
@@ -35,9 +35,10 @@ public class User{
     @RequiresApi(api = Build.VERSION_CODES.O)
     public User(String na, String em, String pass) throws IOException {
 
-        name = na;
-        email = em;
-        password = pass;
+        this.name = na;
+        this.email = em;
+        this.password = pass;
+        this.userBookList = new ArrayList<BookList>();
 
         //List<BorrowedBooks> books = new ArrayList<BorrowedBooks>();
         //book2.book_id = 2;
@@ -47,6 +48,14 @@ public class User{
         //bookCheck();
 
         Log.d("myTag", "User created");
+    }
+
+    public List<BookList> getUserBookList() {
+        return userBookList;
+    }
+
+    public void setUserBookList(List<BookList> userBookList) {
+        this.userBookList = userBookList;
     }
 
     public void clickOnCompareBook(){//todo -> or clickOnCompareButton
@@ -64,6 +73,13 @@ public class User{
         Reviews review = new Reviews(Math.random() * 1000);
 
         review.addReview(score);
+        addPointsByReview(score);
+    }
+
+    public void addPointsByReview(int stars) {
+        if (stars >= 4) {
+            this.points += 5;
+        }
     }
 
     //CompareBook list
