@@ -49,39 +49,7 @@ public class User{
         Log.d("myTag", "User created");
     }
 
-    public void clickOnCompareBook(){//todo -> or clickOnCompareButton
 
-    }
-
-    public int getPoints(){
-
-        return points;
-    }
-
-
-    int[] compare = new int[2];
-    int k = 0;
-    public void chooseBookToCompare(int cid){
-
-        if(k<1) {
-            compare[k] = cid;
-            k++;
-        }
-        else getAnotherBookToCompare(cid);
-
-        //new CompareBook(id, bid);
-    }
-
-    public void getAnotherBookToCompare(int c2id){
-
-        if(k<2){
-            compare[k] = c2id;
-            CompareBook bcompare = new CompareBook(id, compare[0], compare[1]);
-            //compare_books.add(rndbook);//todo
-            bcompare.saveOnDatabase();
-        }
-
-    }
 
     public void setName(String new_name){
 
