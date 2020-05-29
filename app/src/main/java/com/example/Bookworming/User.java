@@ -49,7 +49,75 @@ public class User{
         Log.d("myTag", "User created");
     }
 
+<<<<<<< HEAD
 
+=======
+    public void clickOnCompareBook(){//todo -> or clickOnCompareButton
+
+    }
+
+    public int getPoints(){
+
+        return points;
+    }
+
+    /*public void setScoreOfBook(Book b){
+
+        Reviews review = new Reviews();
+        addReview(stars);
+    }
+
+    public void addReview(){
+
+
+    }
+
+    public void reviewBook(Book b){
+
+        Reviews review = new Reviews();
+
+    }*/
+
+    //CompareBook list
+    List<CompareBook> compare_books = new ArrayList<CompareBook>();//todo read from file
+    public void clickOnCompareButton(int compId) {
+        compBook1 = new CompareBook(this.id, compId);
+
+        if (compare_books.size() == 0) {
+            compBook2 = continueWithAnotherChoice();
+        } else {
+            compBook2 = chooseBookToCompareWith();
+        }
+
+        compareBooks(compBook1, compBook2);
+    }
+
+    public CompareBook continueWithAnotherChoice() {
+        int compId2 = 100;      // random
+
+        return new CompareBook(this.id, compId2);
+    }
+
+    public CompareBook chooseBookToCompareWith(int compId) {
+        List<CompareBook> compBooks = getCompareBooks();
+
+        for (CompareBook cb : compBooks) {
+            if (cb.checkUnavailability() && (cb.book_id == compId)) {
+                compBooks.remove(cb);
+                cb.displayUnavailability();
+            }
+        }
+
+        return compBooks.get(1);
+    }
+
+    public void compareBooks(CompareBook compB1, CompareBook compB2) {}
+
+
+    public List<CompareBook> getCompareBooks() {
+        return compare_books;
+    }
+>>>>>>> 3477594611f39a12fd1514685420739700a646c0
 
     public void setName(String new_name){
 
