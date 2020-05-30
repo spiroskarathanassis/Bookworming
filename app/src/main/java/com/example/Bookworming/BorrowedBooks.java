@@ -3,7 +3,7 @@ package com.example.Bookworming;
 import android.os.Build;
 
 import androidx.annotation.RequiresApi;
-
+import java.io.IOException
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
 
@@ -20,9 +20,13 @@ public class BorrowedBooks {
         book_id = bid;
     }
 
-    public long dayscalculation(){
+    public long dayscalculation() {
+        try {
+            long days = ChronoUnit.DAYS.between(date, LocalDate.now());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
-        long days = ChronoUnit.DAYS.between(date, LocalDate.now());
         return days;
     }
 

@@ -44,16 +44,26 @@ public class Book {
 
     public boolean checkBookData(){
 
-        if(String.valueOf(year).length() != 4)
+        if(String.valueOf(year).length() != 4) {                  // year
             throw new IllegalArgumentException("Error...");
-        if(String.valueOf(title).length() < 2 | title == null)
+            return false;
+        }
+        if(String.valueOf(title).length() < 2 || title == null) {// title
             throw new IllegalArgumentException("Error...");
-        if(author == null)
+            return false;
+        }
+        if(author == null) {                                      // author
             throw new IllegalArgumentException("Error...");
-        if(type.isEmpty())
+            return false;
+        }
+        if(type.isEmpty()) {                                      // type
             throw new IllegalArgumentException("Error...");
-        if(String.valueOf(isbn).length() < 8  )
+            return false;
+        }
+        if(String.valueOf(isbn).length() < 8 ) {                 // isbn
             throw new IllegalArgumentException("Error...");
+            return false;
+        }
 
         return true;
     }

@@ -48,9 +48,13 @@ public class Admin {
 
         System.out.println("Set name for this book list");
         String listName = listInput.nextLine();
-
         System.out.println("Set type for this book list");
         String type = listInput.nextLine();
+
+        if ( !((listName && type) instanceof String) || ((listName && type) == null)) {
+            System.out.println("Retry again. Your input didn't match the requirements values");
+            addBookList();
+        }
 
         System.out.println("Write 3 books names for this book list");
         Book book1 = new Book( /*listInput.nextLine()*/ );

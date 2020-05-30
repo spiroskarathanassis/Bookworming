@@ -49,6 +49,9 @@ public class MainActivity {
             System.out.println("You have 11% discount!!");
         }
 
+        SetQuiz setQuiz = new SetQuiz("programming");
+        user1.chooseTheme("programming");
+
         }
     }
 }
