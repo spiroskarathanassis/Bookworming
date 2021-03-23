@@ -62,7 +62,7 @@ Answer | Enitty that requires quiz answers
 #### Team
 Names                 | Email
 --------------------- | ---------------------
-Spiros Karathanassis  | skarathanassis@phaistosnetworks.gr
+Spiros Karathanassis  | skarathanassisdev@gmail.gr
 Giorgos Tzelepis      | geo335127@gmail.com
 Stella Markopoulou    | stmarkop@gmail.com
 Niki Georgiou         | georgioynikh@gmail.com
